@@ -1,0 +1,211 @@
+/* CSS Document */
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+body {
+	padding-top: 30px;
+	font: 62.5%;
+	line-height: 1.1em;
+	background-color: #EEEEEE;
+}
+h1 {
+	margin-top: 25px;
+	font-family: Arial, sans-serif;
+	font-size: 28px;
+}
+h2 {
+	margin: 20px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 26px;
+}
+h3 {
+	background-color: #696969;
+	color: white;
+}
+h1, h2, h3 {
+	line-height: 1.3em;
+}
+hr {
+	width: 100%;
+	border: 1px solid #808080;
+}
+ul {
+	padding: 0px;
+    list-style-type: none;
+}
+/* ID Styles */
+
+#container {
+    width: 1030px;
+	height: 1015px;
+    margin: auto;
+    padding-bottom: 18px;
+    font-family: Georgia,"Times New Roman",Times,serif;
+	background-color: #CCCCCC;
+}
+#container:after { 
+	content: " "; 
+	clear: both;
+	display: block;
+	min-height: 0;
+}
+#left-side {
+	width: 200px;
+	height: 1010px;
+	margin: 0px;
+	padding: 4px;
+	display: block;
+	text-decoration: none;
+	font-family: Georgia,"Times New Roman",Times,serif;
+	font-size: 17px;
+	float: left;
+}
+#left-side:after { 
+	content: " "; 
+	clear: both;
+	display: block;
+	min-height: 0;
+}
+#right-side {
+	width: 200px;
+	height: 1014px;	
+	margin: 0px;
+	padding: 8px;
+	display: block;
+	font-family: Georgia,"Times New Roman",Times,serif;
+	font-size: 17px;
+	text-decoration: none;
+	text-align: center;
+	position: relative;
+	float: right;
+}
+#right-side:after { 
+	content: " "; 
+	clear: both;
+	display: block;
+	min-height: 0;
+}
+#center {
+	width: 580px;
+	height: 1006px;
+	margin:0 208px;
+	padding: 13px;
+	display: block;
+	background-color: white;
+	border: 1px solid #696969;
+}
+#center:after { 
+	content: " "; 
+	clear: both;
+	display: block;
+	min-height: 0;
+}
+#home {
+	width: 50px;
+	height: 44px;
+	margin: 10px;
+	background-image: url('image/home.png');
+	float: right;
+}
+#form-style {
+	margin: 15px;
+	padding: 0;
+	font-size: 10px;
+}
+#input-style {
+	width: 128px;
+	color: #808080;
+	font-style: oblique; 
+}
+#html-style {
+	width: 88px;
+	height: 31px;
+	border: 0;
+	float: left;
+}
+#css-style {
+	width: 88px;
+	height: 31px;
+	border: 0;
+	float: right;
+}
+#buton {
+	width: 124px;
+	height: 44px;
+	margin: 0;
+	color: transparent;
+	background-image: url('image/blue-button.png');
+}
+#oreilly {
+	width: 80px;
+	height: 110px;
+	border: 0;
+}
+#book-style {
+	border: 0;
+}
+#round {
+	width: 33px;
+	background-color: #C0C0C0;
+	-moz-border-radius: 3px 3px / 3px 3px;
+	border-radius: 3px 3px / 3px 3px;
+}
+/* Class Styles */
+
+.right-arrow {
+	width: auto;
+	background-color: #CCCCCC;
+	float: right;
+}
+.left-arrow {
+	width: auto;
+	background-color: #CCCCCC;
+}
+.red {
+	color: red;
+}
+.logo {
+	width: 120px;
+	height: 112px;
+	margin: 2px;
+	background-image: url('image/css-logo.png');
+	float: left;
+}
+.right-position {
+	margin: 5px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 17px;
+	text-decoration: none;	
+}
+.navi3 {
+	width: auto;
+	margin: 2px;
+	padding: 5px;
+	border: 1px solid #696969;
+	background-color: white;
+}
+.style a, .navi a {
+    text-decoration: none;
+    text-transform: capitalize;
+	color: inherit;
+}
+.navi2 a, .navi3 a {
+	text-decoration: underline;
+	color: inherit;
+}	
+.navi a:hover {
+	text-decoration: underline;
+	color: red;
+}
+.style a:hover {
+	text-decoration: none;
+	color: #FF2E24;
+}
+.navi2 a:hover, .navi3 a:hover {
+	color: red;
+}

@@ -1,0 +1,137 @@
+<doctype!html>
+<html>
+	<head>
+		<title>HTML forms and frames Homework 2</title>
+	</head>
+	
+	<body>
+		<form method="get">
+			<table border="1" cellspacing="0" cellpadding="5" >
+				<tr>
+					<td width="160">
+						<label for="ln"><div align="right"><b>Last Name</b></label>
+					</td>
+					<td>
+						<input type="text" name="Last Name" value="Nakov" style="width: 250" id="ln" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="fn"><div align="right"><b>First Name<b></label>
+					</td>
+					<td>
+						<input type="text" name="First Name" value="Svetlin" style="width: 250" id="fn" />
+					</td>
+				<tr>
+					<td>
+						<label for="Address"><div align="right"><b>Address</b></label>
+					</td>
+					<td>
+						<textarea name="Address" style="width: 240; height: 80" id="Address" >17 Hristo Botev Str. floor 3, apt. 12</textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="City"><div align="right"><b>City</b></label>
+					</td>
+					<td>
+						<table>
+							<tr>
+								<td>
+									<input type="text" name="City" value="Kaspichan" style="width: 160" id="City" />
+								</td>
+								<td>
+									<b>State</b>
+								</td>
+								<td>
+									<input type="text" name="State" style="width: 40" />
+								</td>
+							</tr>
+						</table>
+					</td>
+				<tr>
+					<td>
+						<label for="ZIP"><div align="right"><b>ZIP/Postal Code</b></label>
+					</td>
+					<td>
+						<input type="text" name="Zip/Postal" style="width: 80" value="9235" id="ZIP" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="Country"><div align="right"><b>Country</b></label>
+					</td>
+					<td>
+						<select name="Country" style="width: 180" id="Country">
+							<option value="Spain">Spain</option>
+							<option value="Canada">Canada</option>
+							<option value="Bulgaria" selected="selected">Bulgaria</option>
+						</select>
+					</td>
+				<tr>
+					<td>
+						<label for="phone"><div align="right"><b>Phone (country code, <br>area code, number)</b></label>
+					</td>
+					<td>
+						(+<input type="text" name="359" value="359" style="width: 50" id="phone" />)
+						<input type="text" name="88" value="88" style="width: 35" />
+						- <input type="text" name="8334343" value="8334343" style="width: 100" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="email"><div align="right"><b>E-mail</b></label>
+					</td>
+					<td>
+						<input type="email" name="E-mail" value="nakov@kaspichan.org" style="width: 250" id="email" />
+					</td>
+				<tr>
+					<td>
+						<label for="birth"><div align="right"><b>Birth Date</b></label>
+					</td>
+					<td>
+						Month <input type="text" name="month" value="06" style="width: 23" id="birth" />
+						Day <input type="text" name="day" value="14" style="width: 23" />
+						Year (4 digit) <input type="text" name="day" value="1980" style="width: 50" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="gender"><div align="right"><b>Gender</b></label>
+					</td>
+					<td>
+						<select name="gender" id="gender">
+							<option value="Male" selected="selected">Male</option>
+							<option value="Female">Female</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="date"><div align="right"><b>Starting date</b></label>
+					</td>
+					<td>
+						<input type="radio" name="date" value="Summer 2006" selected="selected" id="date" />Summer 2006
+						<input type="radio" name="date" value="Spring 2006" />Spring 2006
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="comm"><div align="right"><b>Comments/Questions</b></label>
+					</td>
+					<td>
+						<textarea name="Comments" style="width: 240; height: 80" id="comm">Please send me more information about the logging.</textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" bgcolor="#81DAF5">
+						<center>
+							<input type="Submit" value="Submit" />
+							<input type="Reset" name="resetBtn" value="Clear This Form" />
+						</center>
+					</td>
+				</tr>		
+			</table>
+		</form>
+	</body>
+</html>
