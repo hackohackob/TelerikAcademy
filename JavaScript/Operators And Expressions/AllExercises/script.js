@@ -1,6 +1,4 @@
-﻿/// <reference path="D:\TelerikAcademy\JavaScript\OperatorsExpressions\AllExercises\JS-Console/js-console.js" />
-
-//#region 1
+﻿//#region 1
 jsConsole.write("01. ");
 
 var number = 123;
