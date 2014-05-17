@@ -1,5 +1,6 @@
 ﻿/// <reference path="D:\TelerikAcademy\JavaScript\Functions\AllTasks\js-console/js-console.js" />
 
+console.log("hacko");
 
 function first() {
     jsConsole.writeLine("=== 1 ================");
