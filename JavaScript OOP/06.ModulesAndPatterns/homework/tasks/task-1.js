@@ -119,9 +119,4 @@ function solve() {
     return Course;
 }
 
-var Course = solve();
-
-var js = Object.create(Course).init('SOmething', ['Something else', 'here']);
-console.log(js.getAllStudents());
-
 module.exports = solve;
