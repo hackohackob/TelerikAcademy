@@ -111,6 +111,48 @@ function solve() {
         },
         pushExamResults: function (results) {
 
+            if(!results || !(Array.isArray(results)) || results.length<1 ){
+                throw Error('invalid data');
+            } else {
+                var arrayID=[],
+                    studentsWithScore=[];
+                results.forEach(function(singleResult){
+                    arrayID[singleResult.StudentID]=1;
+                    if(!results[singleResult].StudentID
+                        || isNaN(results[singleResult].StudentID)
+                        || results[singleResult].StudentID<0
+                        || results[singleResult].StudentID>this.data.studentsCurrentID
+                        || !results[singleResult].score
+                        || isNaN(results[singleResult].score)
+                    ){
+                        throw Error('invalid data');
+                    }
+                });
+                arrayID=arrayID.filter(function(item){
+                    return item;
+                })
+
+                if(arrayID.length<results.length){
+                    throw Error('CHEATER!');
+                }
+
+                results.forEach(function(singleResult){
+                   studentsWithScore[singleResult]=singleResult.score;
+                });
+
+                console.log(studentsWithScore);
+
+                this.data.students.forEach(function(currentStudent){
+                    console.log(currentStudent);
+                   //if(studentsWithScore[currentStudent.id]){
+                   //    this.data.students[currentStudent].score = studentsWithScore[currentStudent.id];
+                   //} else {
+                   //    this.data.students[currentStudent].score = 0;
+                   //}
+                });
+
+                return this;
+            }
         },
         getTopStudents: function () {
 
@@ -121,7 +163,13 @@ function solve() {
 
 var Course = solve();
 
-var js = Object.create(Course).init('SOmething', ['Something else', 'here']);
-console.log(js.getAllStudents());
+var jsoop = Object.create(Course).init('SOmething', ['Something else', 'here']);
+//jsoop.addStudent(getValidName() + ' ' + getValidName());
+//jsoop.addStudent(getValidName() + ' ' + getValidName())
+//jsoop.addStudent(getValidName() + ' ' + getValidName())
+//jsoop.addStudent(getValidName() + ' ' + getValidName())
+
+
+
 
 module.exports = solve;
