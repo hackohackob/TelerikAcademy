@@ -161,15 +161,6 @@ function solve() {
     return Course;
 }
 
-var Course = solve();
 
 var jsoop = Object.create(Course).init('SOmething', ['Something else', 'here']);
-//jsoop.addStudent(getValidName() + ' ' + getValidName());
-//jsoop.addStudent(getValidName() + ' ' + getValidName())
-//jsoop.addStudent(getValidName() + ' ' + getValidName())
-//jsoop.addStudent(getValidName() + ' ' + getValidName())
-
-
-
-
 module.exports = solve;
