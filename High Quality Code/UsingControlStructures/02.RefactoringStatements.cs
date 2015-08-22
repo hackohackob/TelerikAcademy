@@ -1,23 +1,26 @@
 ﻿class RefactoringStatements
 {
-    Potato potato=GetPotato();
-    //... 
-    if(potato != null)
+    public static void Main()
     {
-        if(potato.HasNotBeenPeeled || potato.IsRotten)
+        Potato potato = GetPotato();
+        //... 
+        if (potato != null)
         {
-            throw new VegetableException();
+            if (potato.HasNotBeenPeeled || potato.IsRotten)
+            {
+                throw new VegetableException();
+            }
+
+            Cook(potato);
         }
 
-	    Cook(potato);
+
+        if (x >= MIN_X && x <= MAX_X &&
+            y >= MIN_Y && y <= MAX_Y &&
+            canVisitCell)
+        {
+            VisitCell();
+        }    
     }
-
-
-    if (x >= MIN_X && x <= MAX_X &&
-        y >= MIN_Y && y <= MAX_Y && 
-        canVisitCell)
-    {
-        VisitCell();
-    }    
 }
 
