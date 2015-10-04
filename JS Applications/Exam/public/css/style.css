@@ -1,0 +1,12 @@
+body { padding-top: 70px; }
+.cookie-image{ max-height: 200px; max-width: 200px; border-radius: 2px;}
+
+.container.add-new{ text-align: center; padding: 20px; text-transform: uppercase;}
+.container.add-new .btn{text-transform: uppercase;}
+
+.tt-menu { background-color: rgb(255, 255, 255); padding: 10px;}
+.tt-dataset p{ font-size:12px; color:rgba(0,0,0,0.7);}
+.tt-highlight { color: blue; }
+
+.cookie-text { display:inline-block;}
+.glyphicon-thumbs-up,.glyphicon-thumbs-down{margin-right: 10px;}

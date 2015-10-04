@@ -1,0 +1,65 @@
+<div class="jumbotron">
+    <div class="container">
+        <h1>{{location}}</h1>
+
+        <p>
+        <ul>
+            <li>Click on category name to show cookies from this category.</li>
+            <li>Click on Home in navigation to show all cookies.</li>
+            <li>Click on "My cookies" when you log in to show your hourly cookie.</li>
+            <li>Click on "Sort By" buttons to sort cookies</li>
+            <li>Click on "Add new cookie" to add a new cookie</li>
+            <li>Use autocomplete when writing cookie category to help yourself :)</li>
+            <li>I've made categories search like this: #/home/category/[category] , however #/home?category=[category] also works!</li>
+            <li>When you click on Author, it redirects you to /users/[user-id], but it is not required and it is not implemented</li>
+        </ul>
+        </p>
+    </div>
+</div>
+{{#if user}}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container col-xs-2 col-xs-offset-5 add-new">
+                <a href="#/cookies/add" class="btn btn-success">
+                    Add new cookie
+                </a>
+            </div>
+        </div>
+        <div class="row col-xs-2 col-xs-offset-5">
+            Sort By:
+            <div class="btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-default sort" data-sort="likes">Likes</button>
+                <button type="button" class="btn btn-default sort" data-sort="date">Date</button>
+            </div>
+        </div>
+    </div>
+{{/if}}
+<div class="container-fluid cookies-container col-xs-8 col-xs-offset-2">
+    {{#each cookies}}
+        <div class="panel panel-default cookie" data-id={{id}} data-user-id={{userId}} data-date={{dateTime shareDate}}>
+            <div class="panel-body">
+                <img src="{{img}}" class="cookie-image">
+
+                <p class="cookie-text">{{text}}</p>
+            </div>
+            <div class="panel-footer container-fluid">
+                <div class="col-xs-5">
+                    <a href="" class="btn btn-success review" data-type="like"><i
+                            class="glyphicon glyphicon-thumbs-up"></i>{{likes}}</a>
+                    <a href="" class="btn btn-danger review" data-type="dislike"><i
+                            class="glyphicon glyphicon-thumbs-down"></i>{{dislikes}}</a>
+                    <button type="button" class="btn btn-default cookie-share">
+                        <span class="glyphicon glyphicon-share" aria-hidden="true"></span> Share
+                    </button>
+                </div>
+                <div class="col-xs-2">
+                    <a class="label label-primary cookie-category" href="#/home/category/{{category}}">{{category}}</a>
+                    <span class="label label-default">{{dateTimePrint shareDate}}</span>
+                </div>
+                <div class="col-xs-1 col-xs-offset-4">
+                    <a href="#/users/{{userId}}" class="label label-default cookie-user">Author</a>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</div>

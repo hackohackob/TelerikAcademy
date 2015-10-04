@@ -1,0 +1,30 @@
+{{#if mineCookie}}
+    {{#with mineCookie}}
+        <div class="panel panel-primary cookie" data-id={{id}} data-user-id={{userId}} data-date=  {{dateTime shareDate}}>
+            <div class="panel-heading">
+                <h3>Your personal cookie</h3>
+            </div>
+            <div class="panel-body">
+                <img src="{{img}}" class="cookie-image">
+                <p class="cookie-text">{{text}}</p>
+            </div>
+            <div class="panel-footer container-fluid">
+                <div class="col-xs-5">
+                    <a href="" class="btn btn-success review" data-type="like"><i class="glyphicon glyphicon-thumbs-up"></i>{{likes}}</a>
+                    <a href="" class="btn btn-danger review" data-type="dislike"><i class="glyphicon glyphicon-thumbs-down"></i>{{dislikes}}
+                    </a>
+                    <button type="button" class="btn btn-default cookie-share">
+                        <span class="glyphicon glyphicon-share" aria-hidden="true"></span> Share
+                    </button>
+                </div>
+                <div class="col-xs-2">
+                    <a class="label label-primary cookie-category" href="#/home/category/{{category}}">{{category}}</a>
+                    <span class="label label-default">{{dateTimePrint shareDate}}</span>
+                </div>
+                <div class="col-xs-1 col-xs-offset-4">
+                    <a href="#/users/{{userId}}" class="label label-default cookie-user">Author</a>
+                </div>
+            </div>
+        </div>
+    {{/with}}
+{{/if}}
